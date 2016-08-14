@@ -69,5 +69,9 @@ Farbox是一个让用户专注于写作的博客平台，并不鼓励博主折�
 2. 上传`template`文件夹至Farbox同步目录      
 3. 将`extra.html`中的代码复制黏贴到**「网站后台设置-渲染-插入脚本」**框内，保存设置         
 
+## 说明    
+
+本模板需要调用Typekit在线字库，如无法使用相关服务，字体将被替换成Cais模板的初始字体方案。         
+
 
 [1]:	http://lanieldev.com/post/webkai-fa/lorem2
