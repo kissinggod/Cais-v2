@@ -1,0 +1,35 @@
+extends base4
+
+load("/template/css/style2.scss")
+load("/template/js/jquery2-latest.js")
+load("/template/js/scroll.js")
+
+#top
+
+body
+
+block content
+	div#posts
+		for post in posts
+			.post
+				h2.title
+					a(href=post.url)
+						i.fa.fa-leaf
+						post.title
+				.post_body= post.content.limit(250)
+				.info
+					span.date
+						i.fa.fa-clock-o
+						post.date
+					span.visitors
+						i.fa.fa-user
+						post.visits
+					
+					.read_more
+						a(href="{{post.url}}") >ReadMore
+
+	.pager
+		if pager.has_pre
+			a.pre(href=pager.pre_url) Pre
+		if pager.has_next
+			a.next(href=pager.next_url) Next
