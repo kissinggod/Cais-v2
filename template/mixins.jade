@@ -9,7 +9,10 @@ mixin make_post(post, is_detail=False)
 		if is_detail
 			.post-content= post.content
 		else
-			.post-content= post.content.limit(200).no_pic
+			if post.metadata.intro
+				.post-content= post.metadata.intro
+			else
+				.post-content= post.content.limit(200).no_pic
 		.post-footer
 			.tags
 				ul
