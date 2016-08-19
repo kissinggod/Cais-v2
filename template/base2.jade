@@ -88,14 +88,14 @@ html
 								i.fa.fa-weibo
 								span Weibo
 				.down
-		                a.icon-arrow2_down.scroll(href="#content")
+		                a.icon-double-angle-down.scroll(href="#content")
 						p Scroll Down
 			
 			.deco
          
     #content
 	block content
-		.autopagerize_page_element:.content
+		.autopagerize_page_element:.content#tous
 			for post in posts
 				+make_post(post, is_detail=False)
 			+make_pager('Newer Posts', 'Older Posts')
@@ -119,4 +119,4 @@ html
 				a(href="http://lanieldev.com") Modified by Laniel
 			.by_farbox
 				a(href="http://www.farbox.com", target="_blank") Proudly published with Farbox&#65281;
-			a.gotop.icon-arrow_up(href="#top")
+			a.gotop.icon-arrow-up(href="#top")

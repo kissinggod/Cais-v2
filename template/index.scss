@@ -389,16 +389,16 @@ padding: 100px 0 0 0;
 		}
   .down {
       display:block;
-		.icon-arrow2_down {
+		.icon-double-angle-down {
 			display: inline-block;
-			width: 1.5em;
-			height: 1.5em;
+			width: 1em;
+			height: 1em;
 			line-height: 0.5em;
 			text-align: center;
 			color: rgba(217, 216, 211, 0.8)!important;
 			cursor: pointer;
 			&:before {
-				font-size: 2em;
+				font-size:1em;
 			}
 		}
 	} 
@@ -408,7 +408,7 @@ padding: 100px 0 0 0;
 			position: absolute;
 			left:0;
 			bottom:1em;
-			.icon-arrow2_down {
+			.icon-double-angle-down {
 				color:  #DCD0C0!important;
 				margin-bottom:0;
 				@include animation (jump 0.5s cubic-bezier(0.15, 0.95, 0.41, 0.95) both infinite);
@@ -856,10 +856,10 @@ margin-top:-1px;
 			@include transform (scale(1));
 			@include animation (zoomin 0.3s $easing1);
 			&:before {
-				font-size: 2.5em;
+				font-size: 1.5em;
 				position: absolute;
-				right: 0.2em;
-				bottom: 0.2em;
+				right: 0.6em;
+				bottom: 0.6em;
 				z-index: 2;
 			}
 			&:after {
