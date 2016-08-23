@@ -37,6 +37,7 @@ Farbox是一个让用户专注于写作的博客平台，并不鼓励博主折�
 - 站点标题字体修改为**Museo Sans Rounded**(TypeKit)    
 - 正文字号改为18px，以改善在PC机上的显示效果    
 - 将Font Awesome架设在七牛，以实现加速      
+- 将`code`和`pre`的字体修改为**Rooney Sans**      
 
 ### 图片  
 - 图片圆角处理  
