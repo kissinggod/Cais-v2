@@ -1,0 +1,5 @@
+a(href="{{post.url}}")
+    if not post.metadata.password
+        post.title
+    else
+        | 密码保护：{{ post.title }}

@@ -1,0 +1,4 @@
+if post.metadata.intro
+				.post-content= post.metadata.intro
+			else
+				.post-content= post.content.limit(200).no_pic

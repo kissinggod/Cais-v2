@@ -1,0 +1,34 @@
+doctype html
+head
+    title
+        block title
+            site.title
+	load("/template/css/style.scss /template/css/basic.css")
+	meta(content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0", name="viewport")
+	meta(content="yes", name="apple-mobile-web-app-capable")
+	meta(content="black", name="apple-mobile-web-app-status-bar-style")
+	meta(content="telephone=no", name="format-detection")
+	block head
+
+body
+	#header
+		#nav
+			a(href="/") Home
+			a(href="/archive") Archive
+			if has('categories')
+				a(href="/categories") Categories
+			if site.tags
+				a(href="/archive?use=tags") Tags
+			if has('links.md')
+				a(href="/links.md") Links
+			if has('about.md')
+				a(href="/about.md") About
+
+	#layout
+		block content
+
+	#footer
+		.powered_by
+			a(target='_blank', href='http://www.farbox.com/') Proudly Powered By FarBox.com
+			span ©2012-2015 Z.R.E.Y Inc.
+			a(href="/template") Clone Tempalte

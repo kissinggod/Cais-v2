@@ -1,0 +1,26 @@
+.post-content img{
+		border-radius:2em;
+		-webkit-filter: contrast(150%);
+		filter: grayscale(100%);
+		-webkit-filter: grayscale(100%); 
+		-moz-filter: grayscale(100%);
+		-ms-filter: grayscale(100%); 
+		-o-filter: grayscale(100%);
+		filter: gray;
+		-webkit-filter: grayscale(1);
+		-webkit-transition: .2s ease-in;
+		-moz-transition: .2s ease-in;
+		transition: .2s ease-in;
+}
+
+.post-content img:hover{
+	border-radius:2em;
+	-webkit-filter: contrast(100%)
+ 	filter: grayscale(0);
+  	-webkit-filter: grayscale(0); -moz-filter: grayscale(0);
+  	-ms-filter: grayscale(0); -o-filter: grayscale(0);
+  	-webkit-filter: grayscale(0); }
+	-webkit-transition: .2s ease-in;
+	-moz-transition: .2s ease-in;
+	transition: .2s ease-in;
+}

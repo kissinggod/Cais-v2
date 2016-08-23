@@ -1,0 +1,14 @@
+from mixins import make_post
+
+extends base3.jade
+
+load("/template/css/style2.scss")
+load("/template/js/jquery2-latest.js")
+load("/template/js/scroll.js")
+
+#top
+
+block content
+	.autopagerize_page_element:.content:.post-page#tous
+		+make_post(post, is_detail=True)
+    	include include/comments
