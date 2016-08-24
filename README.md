@@ -78,7 +78,7 @@ Farbox是一个让用户专注于写作的博客平台，并不鼓励博主折�
 ## 说明    
 
 - 本模板需要调用Typekit在线字库，如无法使用相关服务，字体将被替换成Cais模板的初始字体方案          
-- `template`与`template_with_password`的区别在于后者增加了文章密码保护功能，并对「分类」及「归档」的样式进行了改动，可根据实际需要选用    
+- <del>`template`与`template_with_password`的区别在于后者增加了文章密码保护功能，并对「分类」及「归档」的样式进行了改动，可根据实际需要选用</del>    
 
 
 [1]:	http://lanieldev.com/post/webkai-fa/lorem2

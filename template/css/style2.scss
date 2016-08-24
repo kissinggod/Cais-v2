@@ -188,29 +188,32 @@ body {
 /* paginator */
 .pager {
     position: relative;
-    height: 57px;
+    height: 60px;
     margin: 0;
+    border-bottom: 1px solid #f2f2f2;
 
 
 
     a {
         color: #bfbfbf;
         letter-spacing: 1px;
-        font-size: 12px;
-        line-height: 5.0;
+        font-size: 14px;
+        line-height: 1.666em;
         text-align: center;
         border: 1px solid #d3d3d3;
+        display:inline;
+        margin-top: 5px;
 
         /*for IE*/
         *line-height: 1.8;
         line-height: 1.8 \9;
 
         // rounded
-        width: 57px;
-        height: 57px;
-        -moz-border-radius: 28px;
-        -webkit-border-radius: 28px;
-        border-radius: 28px;
+        width: 80px;
+        height: 30px;
+        -moz-border-radius: 999em;
+        -webkit-border-radius: 999em;
+        border-radius: 999em;
         display: block;
 
         width: expression('60px');
@@ -226,10 +229,12 @@ body {
     .next {
         position: absolute;
         right: 0;
+        padding-top:8px;
     }
     .pre {
         position: absolute;
         left: 0;
+        padding-top:8px;
     }
 
 }
@@ -286,30 +291,68 @@ body {
     }
 }
 
-#footer {
-    margin-top:50px;
+.footer {
+	clear: both;
+	max-width: 700px;
+	text-align: center;
+	font-size: 10px;
+	padding-top: 60px;
+	margin: 0 auto;
 
-    a {
-        color: #666;
-        font-size: 0.8em;
-        &:hover {
-            color: #E60900;
-            text-decoration: underline;
-        }
-    }
+    .gotop {
+			display: block;
+			width: 4.5em;
+			height: 4.5em;
+			overflow: hidden;
+			color: #fbfbfb;
+			text-align: center;
+			position: fixed;
+			right: 0;
+			bottom: 0;
+			z-index: 9;
+			@include transition-transform (0.3s, $easing1);
+			@include transform-origin (100% 100%);
+			@include transform (scale(1));
+			@include animation (zoomin 0.3s $easing1);
+			&:before {
+				font-size: 1.5em;
+				position: absolute;
+				right: 0.6em;
+				bottom: 0.6em;
+				z-index: 2;
+			}
+			&:after {
+				content: "";
+				width: 200%;
+				height: 200%;
+				background: #333;
+				border-radius: 50%;
+				position: absolute;
+				left: 0;
+				top: 0;
+				z-index: -1;
+				@include transition (background 0.3s $easing1);
+			}
+			&:hover {
+				@include transform (scale(1.2));
+			}
+			&:hover:after {
+				background:#bfbfbf;
+			}
+		}
 
-    .powered_by {
-        margin-bottom: 20px;
-        text-align: center;
-        font-size: 0.8em;
-
-        span {
-            font-size: 9px;
-            padding: 0 15px;
-        }
-    }
-
+	a {
+		color: #A6A6A6;
+		margin-left: 3px;
+	}
+	span{
+		margin-right: 3px;
+	}
+	.by_farbox{
+		margin-top: 0.8em;
+	}
 }
+
 
 
 

@@ -3,7 +3,7 @@ extends base3.jade
 block content
 	.autopagerize_page_element:.content
 		ul.list-with-title
-			entries = get_data(type='post',limit=999, sort='desc').group('-date:year')
+			entries = get_data(type='post', status=['public', 'secret'], limit=20, sort='desc').group('-date:year')
 			for year, posts in entries
 				div.listing-title= year
 				ul.listing

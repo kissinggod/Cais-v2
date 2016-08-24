@@ -3,16 +3,13 @@ mixin make_post(post, is_detail=False)
 		.post-title
 			h3
 				if is_detail
-					a= post.title
+					include include/detailtitle
 				else
-					a(href="{{post.url}}")= post.title
+					include include/listtitle
 		if is_detail
-			.post-content= post.content
+			include include/detailcontent
 		else
-			if post.metadata.intro
-				.post-content= post.metadata.intro
-			else
-				.post-content= post.content.limit(200).no_pic
+			include include/listcontent
 		.post-footer
 			.tags
 				ul

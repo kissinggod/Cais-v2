@@ -1,6 +1,7 @@
-extends base4
+from mixins import make_pager
 
-load("/template/css/style2.scss")
+extends base4
++load('/template/css/blog_basic.css /template/style/css/style.scss /template/css/fonts.css')
 load("/template/js/jquery2-latest.js")
 load("/template/js/scroll.js")
 
@@ -10,26 +11,17 @@ body
 
 block content
 	div#posts
-		for post in posts
-			.post
-				h2.title
-					a(href=post.url)
-						i.fa.fa-leaf
-						post.title
-				.post_body= post.content.limit(250)
-				.info
-					span.date
-						i.fa.fa-clock-o
-						post.date
-					span.visitors
-						i.fa.fa-user
-						post.visits
-					
-					.read_more
-						a(href="{{post.url}}") >ReadMore
+	    ul.list-with-title
+	        entries = get_data(type='post', status=['public', 'secret'], limit=20).group('-date:year')
+	        for year, posts in entries
+	            div.listing-title= year
+	            ul.listing
+	                for post in posts
+	                    .listing-item
+	                        .listing-post
+	                             a(href=post.url, title=post.title)= post.title
+	                             div.post-time
+	                                span.date= post.date.format("%m-%d")
 
-	.pager
-		if pager.has_pre
-			a.pre(href=pager.pre_url) Pre
-		if pager.has_next
-			a.next(href=pager.next_url) Next
+
+		+make_pager('Prev', 'Next')

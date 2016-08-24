@@ -14,7 +14,7 @@ html
 		block title
 			title= post.title or site.title
 		+mobile_meta()
-		meta(name="author", content="CaiCai,hi@cai-cai.me")
+		meta(name="author", content="CaiCai,hi@cai-cai.me", name="modder", content="kissinggod@gmail.com")
 		meta(name="keywords", content=site.configs.keywords.escaped)
 		meta(name="description", content=site.raw_content.escaped)
 		+load('/template/css/blog_basic.css /template/style/css/style.scss /template/css/fonts.css')
@@ -92,11 +92,11 @@ html
 
 		.footer
 			a(target="_blank", href="http://{{request.domain}}")
-				span All content copyright {{site.title}} © 2015 • All rights reserved.
+				span All content copyright {{site.title}} © 2015-2016 • All rights reserved.
 				span Designed by
 				a(href="https://www.caicai.me") CaiCai.
 				span
 				a(href="http://lanieldev.com") Modified by Laniel
 			.by_farbox
-				a(href="http://www.farbox.com", target="_blank") Proudly published with Farbox&#65281;
+				a(href="http://www.farbox.com", target="_blank") Proudly published with Farbox & &#9825&#65281;
 			a.gotop.icon-arrow-up(href="#top")
