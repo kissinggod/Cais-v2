@@ -47,11 +47,11 @@ $easing1: cubic-bezier(0.15, 0.95, 0.41, 0.95);
 
 
 ::selection {
-    background:#FEFFCF;
+    background:#FCFCCF;
 }
 
 ::-moz-selection {
-    background:#FFFFCF;
+    background:#FCFCCF;
 }
 
 blockquote{
@@ -517,7 +517,7 @@ a:hover, a:active {
      font-family:"rooney-sans", "source-han-sans-simplified-c", sans-serif;
      padding:20px 40px;
      font-size:16px;
-     line-height:1.2em;
+     line-height:1.3em;
      font-weight:800;
   	background-color:#4C4B49;
 	border:dotted 1px #b9b9b9;
@@ -527,7 +527,7 @@ a:hover, a:active {
      code{
      font-family:"rooney-sans", "source-han-sans-simplified-c", sans-serif;
      background-color:#4C4B49;
-     line-height:1.2em;
+     line-height:1.3em;
      border:dotted 0px #fbfbfb;
      color:#fbfbfb;
      }
@@ -539,7 +539,7 @@ a:hover, a:active {
      font-weight:800;
      background-color:#efefef;
 	border:dotted 1px #b9b9b9;
-	line-height:1.2em;
+	line-height:1.3em;
   }
 		 
 		 a {

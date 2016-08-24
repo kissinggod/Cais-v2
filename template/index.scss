@@ -146,11 +146,11 @@ a {
 
 
 ::selection {
-    background:#FEFFCF;
+    background:#FCFCCF;
 }
 
 ::-moz-selection {
-    background:#FFFFCF;
+    background:#FCFCCF;
 }
 
 blockquote{
@@ -667,32 +667,6 @@ margin-top:-1px;
      background-color:#333;
 	}
 
-    
-      
-  pre{
-     font-family:"futura-pt-condensed", "source-han-sans-simplified-c", sans-serif;
-     padding:20px 40px;
-     font-size:1.1em;
-     line-height:1.1em;
-     font-weight:500;
-  	background-color:#efefef;
-	border:dotted 1px #b9b9b9;
-	word-wrap: break-word; 
-	word-break: normal; 
-     code{
-     font-family:"futura-pt-condensed", "source-han-sans-simplified-c", sans-serif;
-     line-height:1.1em;
-     border:dotted 0px #fbfbfb;
-     }
-  }   
-      
-  code{
-     font-family:"futura-pt-condensed";
-     font-size:1.2em;
-     font-weight:500;
-     background-color:#efefef;
-	border:dotted 1px #b9b9b9;
-  }
 		 
 		 a {
 			text-decoration: none;
