@@ -56,6 +56,16 @@ $easing1: cubic-bezier(0.15, 0.95, 0.41, 0.95);
 
 blockquote{
    background:#4C4B49；
+   font-size:14px!important;
+} 
+
+blockquote{
+   background:#4C4B49；
+   p{
+    font-size:14px!important;
+    font-style:bold;
+    font-weight:700;
+   }
 } 
 
 /*basic styles starts*/

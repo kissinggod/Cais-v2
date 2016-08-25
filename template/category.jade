@@ -12,7 +12,7 @@ body
 block content
 	div#posts
 	    ul.list-with-title
-	        entries = get_data(type='post', status=['public', 'secret'], limit=20).group('-date:year')
+	        entries = get_data(type='post', path=get_request_path(offset=1), status=['public', 'secret'], limit=20).group('-date:year')
 	        for year, posts in entries
 	            div.listing-title= year
 	            ul.listing
